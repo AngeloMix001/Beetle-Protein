@@ -1,14 +1,5 @@
 body{margin:0;font-family:'Poppins',sans-serif;background-color:#000;color:#fff;text-align:center}
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url("imagen_2025-10-05_142452773.png") center/cover no-repeat;
-  padding: 20px;
-}
+.hero {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imagen_2025-10-05_142452773.png") center/cover no-repeat; padding: 20px;}
 .logo{color:#d4af37;font-size:3rem;margin-bottom:.5rem}
 .tagline{font-size:1.2rem;margin-bottom:1.5rem}
 .cta{background-color:#d4af37;color:#000;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:600;transition:background .3s ease}
