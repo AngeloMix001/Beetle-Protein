@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gracias | Beetle Protein</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #d4af37;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Gracias por contactarnos!</h1>
+  <p>Tu mensaje fue enviado con éxito. Te responderemos pronto 💪</p>
+  <a href="https://beetleprotein.cl">Volver al inicio</a>
+</body>
+</html>
