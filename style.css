@@ -18,3 +18,15 @@ button{background-color:#d4af37;color:#000;font-weight:bold;padding:10px;border:
 button:hover{background-color:#fff}
 footer{background-color:#111;padding:15px;font-size:.9rem}
 @media(max-width:768px){.cards{flex-direction:column;align-items:center}}
+/* ====== REDES SOCIALES ====== */
+.redes a {
+  color: #d4af37; /* Dorado */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: #ffffff; /* Blanco al pasar el mouse */
+}
+
