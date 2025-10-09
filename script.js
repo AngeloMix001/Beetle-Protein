@@ -7,3 +7,16 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
   alert('Gracias por contactarte, '+n+'. Te responderemos pronto.');
   this.reset();
 });
+// Mostrar mensaje de agradecimiento al enviar el formulario
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const mensajeGracias = document.getElementById("mensajeGracias");
+
+  form.addEventListener("submit", function () {
+    // Pequeña pausa para asegurar envío
+    setTimeout(() => {
+      mensajeGracias.style.display = "block";
+      form.reset();
+    }, 500);
+  });
+});
