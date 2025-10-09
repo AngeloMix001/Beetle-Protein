@@ -27,26 +27,33 @@
     </div>
   </section>
   
-  <section id="contacto" class="contacto">
 <section id="contacto" class="contacto">
   <h2>Contáctanos</h2>
+
   <form id="contactForm" action="https://formsubmit.co/beetleprotein@gmail.com" method="POST">
     <input type="text" name="nombre" placeholder="Nombre" required />
     <input type="email" name="correo" placeholder="Correo" required />
     <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <!-- Opcional: desactivar captcha y evitar redirección -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://beetleprotein.cl/">
+
     <button type="submit">Enviar</button>
   </form>
+
+  <!-- Mensaje oculto por defecto -->
   <p id="mensajeGracias" style="display:none; color:#d4af37; margin-top:15px;">
     ¡Gracias por contactarnos! 💪<br>Tu mensaje fue enviado con éxito.
   </p>
+
   <div class="redes" style="margin-top: 20px;">
     <a href="https://www.instagram.com/beetle_protein?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
     <a href="#">LinkedIn</a> | 
     <a href="mailto:beetleprotein@gmail.com">Correo</a>
   </div>
 </section>
+
     
 </section>
   <footer>© 2025 Beetle Protein. Todos los derechos reservados.</footer>
