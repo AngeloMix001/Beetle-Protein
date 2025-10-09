@@ -1,3 +1,4 @@
+/* ====== ESTILOS GENERALES ====== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -36,16 +37,17 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .cta:hover {
   background-color: #fff;
+  transform: scale(1.05);
 }
 
 /* ====== SECCIONES GENERALES ====== */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 h2 {
@@ -59,10 +61,12 @@ h2 {
   line-height: 1.6;
 }
 
-.producto img {
+.producto img,
+.imagen-producto {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #d4af37;
+  width: 300px;
 }
 
 /* ====== TARJETAS DE BENEFICIOS ====== */
@@ -118,11 +122,23 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* ====== MENSAJE DE GRACIAS ====== */
+#mensajeGracias {
+  display: none;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
 }
 
 /* ====== FOOTER ====== */
@@ -134,29 +150,19 @@ footer {
 
 /* ====== ENLACES DE REDES SOCIALES ====== */
 .redes a {
-  color: #d4af37; /* dorado */
+  color: #d4af37;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .redes a:hover {
-  color: #ffffff; /* blanco al pasar el mouse */
+  color: #ffffff;
 }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/* ====== RESPONSIVE DESIGN ====== */
 
-
-.redes a:hover {
-  color: #ffffff; /* Blanco al pasar el mouse */
-}
-/* 💻 Estilos para pantallas grandes (PC o notebook) */
+/* 💻 Pantallas grandes */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;
@@ -173,7 +179,7 @@ footer {
   }
 }
 
-/* 📱 Estilos para pantallas medianas o móviles */
+/* 📱 Móviles y pantallas medianas */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
@@ -196,4 +202,3 @@ footer {
     padding: 10px 20px;
   }
 }
-
