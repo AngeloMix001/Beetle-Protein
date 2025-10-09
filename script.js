@@ -2,21 +2,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const mensajeGracias = document.createElement("p");
 
-  // Crear el mensaje de agradecimiento dinámicamente
   mensajeGracias.id = "mensajeGracias";
   mensajeGracias.innerHTML = "¡Gracias por contactarnos! 💪<br>Tu mensaje fue enviado con éxito.";
   mensajeGracias.style.display = "none";
   mensajeGracias.style.color = "#d4af37";
   mensajeGracias.style.marginTop = "15px";
 
-  // Insertar el mensaje debajo del formulario
   form.insertAdjacentElement("afterend", mensajeGracias);
 
-  // Mostrar mensaje cuando se envía
-  form.addEventListener("submit", function () {
-    // Mostrar el mensaje después de un breve retraso
-    setTimeout(() => {
-      mensajeGracias.style.display = "block";
-    }, 500);
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // Evita recargar la página
+
+    const formData = new FormData(form);
+
+    try {
+      // Envía los datos a FormSubmit sin recargar
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData
+      });
+
+      if (response.ok) {
+        mensajeGracias.style.display = "block";
+        form.reset();
+      } else {
+        alert("Ocurrió un error al enviar el mensaje. Inténtalo nuevamente.");
+      }
+    } catch (error) {
+      alert("Error de conexión. Verifica tu red e inténtalo de nuevo.");
+    }
   });
 });
