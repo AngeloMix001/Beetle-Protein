@@ -27,19 +27,26 @@
     </div>
   </section>
   <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <form id="contactForm">
-      <input type="text" id="nombre" placeholder="Nombre" required />
-      <input type="email" id="correo" placeholder="Correo" required />
-      <textarea id="mensaje" placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <div class="redes">
-      <a href="https://www.instagram.com/beetle_protein?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a> | 
-      <a href="#">LinkedIn</a> | 
-      <a href="mailto:beetleprotein@gmail.com">Correo</a>
-    </div>
-  </section>
+  <h2>Contáctanos</h2>
+
+  <form action="https://formsubmit.co/beetleprotein@gmail.com" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required />
+    <input type="email" name="correo" placeholder="Correo" required />
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <!-- Opcionales -->
+    <input type="hidden" name="_next" value="https://angelomix001.github.io/Beetle-Protein/">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="redes">
+    <a href="https://www.instagram.com/beetle_protein?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
+    <a href="#">LinkedIn</a> | 
+    <a href="mailto:beetleprotein@gmail.com">Correo</a>
+  </div>
+</section>
   <footer>© 2025 Beetle Protein. Todos los derechos reservados.</footer>
   <script src="script.js"></script>
 </body>
