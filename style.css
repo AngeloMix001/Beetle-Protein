@@ -156,4 +156,44 @@ footer {
 .redes a:hover {
   color: #ffffff; /* Blanco al pasar el mouse */
 }
+/* 💻 Estilos para pantallas grandes (PC o notebook) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  .hero {
+    height: 100vh;
+    background-position: center;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+  .imagen-producto {
+    width: 400px;
+  }
+}
+
+/* 📱 Estilos para pantallas medianas o móviles */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .imagen-producto {
+    width: 80%;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta {
+    padding: 10px 20px;
+  }
+}
 
